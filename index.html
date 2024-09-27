@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Lucha con Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="menuPrincipal">
+        <h1>¡Bienvenido al Juego de Lucha!</h1>
+        <button id="startGameBtn">Iniciar Juego</button>
+        <button id="exitGameBtn">Salir</button>
+    </div>
+    <div id="container" style="display:none;">
+        <div id="healthContainer">
+            <!-- Contenedor para Player 1 -->
+            <div class="playerContainer">
+                <div class="playerName">Player 1</div>
+                <div class="healthBar">
+                    <div class="health" id="playerHealth"></div>
+                </div>
+            </div>
+            <div id="separador">VS</div>
+            <!-- Contenedor para Player 2 -->
+            <div class="playerContainer">
+                <div class="playerName">Player 2</div>
+                <div class="healthBar">
+                    <div class="health" id="enemyHealth"></div>
+                </div>
+            </div>
+        </div>
+        <div id="displayText">Tie</div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="endGameMenu" style="display: none;">
+            <button id="playAgainBtn">Jugar de Nuevo</button>
+            <button id="backToMenuBtn">Volver al Menú</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
